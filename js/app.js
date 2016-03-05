@@ -34,7 +34,7 @@
 
 		
 	}else{
-		alert("actualiza tu navegador");
+		alert("get a better Browser Xd");
 	}
 
 
