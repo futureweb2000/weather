@@ -58,6 +58,10 @@
 			console.log(" Tu posicion es " + lat + ", " + lon);
 
 			$.getJSON(API_WEATHER_URL + "lat=" + lat + "&lon=" + lon, getCurrentWeather);
+			var place = lat + ',' + lon;
+			var locations = [];
+			locations.push(place);
+			console.log(locations);
 		};
 
 		function getCurrentWeather(data){
