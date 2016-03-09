@@ -54,10 +54,14 @@
 
 			var lat = position.coords.latitude;
 			var lon = position.coords.longitude;
-
+			var place = lat + "," + lon;
+			var locations = [];
+			locations.push(place);
 			console.log(" Tu posicion es " + lat + ", " + lon);
 
 			$.getJSON(API_WEATHER_URL + "lat=" + lat + "&lon=" + lon, getCurrentWeather);
+			
+			
 		};
 
 		function getCurrentWeather(data){
